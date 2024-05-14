@@ -1,0 +1,13 @@
+{
+  "name": "cloudpirates-developer-portal",
+  "description": "CloudPirates Public Developer Portal",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  }
+}

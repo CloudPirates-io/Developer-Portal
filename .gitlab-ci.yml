@@ -1,0 +1,14 @@
+include:
+  - project: infrastructure/gitlab-templates
+    ref: main
+    file: node-full.yml
+
+variables:
+  SOURCE_PROJECT_NAME: developer-portal
+  IMAGE: koperator-internal/documentation/developer-portal
+
+release:image:
+  extends: .release
+  trigger:
+    project: koperator/infrastructure/kubernetes
+    branch: main
