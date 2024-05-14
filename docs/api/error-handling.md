@@ -98,7 +98,7 @@ Forbidden - The server understood the request, but is refusing to fulfill it. Re
 }
 ```
 
-## 404 Not found
+## 404 Not Found
 The server could not find the requested resource. This typically occurs when the requested URL is invalid, or the resource does not exist on the server.
 
 ::: warning

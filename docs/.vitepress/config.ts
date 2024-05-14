@@ -13,7 +13,10 @@ export default defineConfig({
       dark: "/logo-white.svg",
       light: "/logo.svg",
     },
-    nav: [{ text: "API Docs", link: "https://api.cloudpirates.io/docs" }],
+    nav: [
+      { text: "Website", link: "https://www.cloudpirates.io" },
+      { text: "Customer Portal", link: "https://auth.cloudpirates.io" },
+    ],
 
     sidebar: [
       {

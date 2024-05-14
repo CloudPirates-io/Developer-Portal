@@ -27,7 +27,7 @@ After you have logged in to our customer portal, you can create a new API key by
 Treat your API key with the same level of security as you would your password. Avoid exposing it in public repositories, sharing it indiscriminately, or including it directly in client-side code.
 :::
 
-## Authenticationg your Request
+## Authenticating your Request
 Once you have obtained an API key, you can use it in your requests:
 
 ```bash
