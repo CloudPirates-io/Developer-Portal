@@ -20,5 +20,5 @@ This project is licensed under the [CC BY-NC-SA 4.0 license](LICENSE.md).
 
 ## Contact Us
 
-If you have any questions or need assistance, you can reach out to us at [developers@cloudpirates.io](mailto:developers@cloudpirates.io).
+If you have any questions or need assistance, you can reach out to us at [developer@cloudpirates.io](mailto:developer@cloudpirates.io).
 
