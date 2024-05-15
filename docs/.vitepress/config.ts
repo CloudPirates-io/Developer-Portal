@@ -42,11 +42,11 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/CloudPirates-io" },
     ],
 
-    // editLink: {
-    //   pattern:
-    //     "https://github.com/CloudPirates-io/developer-portal/edit/main/docs/:path",
-    //   text: "Edit this page on GitHub",
-    // },
+    editLink: {
+      pattern:
+        "https://github.com/CloudPirates-io/developer-portal/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
+    },
 
     lastUpdated: {
       text: "Updated at",
