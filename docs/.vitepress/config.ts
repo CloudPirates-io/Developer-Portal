@@ -34,6 +34,10 @@ export default defineConfig({
             text: "Setup Instructions",
             link: "/managed-observability/setup-instructions",
           },
+          {
+            text: "Alert Reference",
+            link: "/managed-observability/alert-reference",
+          },
         ],
       },
     ],
