@@ -6,7 +6,7 @@ Our API provides programmatic access to our platform's features and data, allowi
 to manage all our managed services, integrate with third-party services, and automate processes.
 
 ## API Specification
-You can find the full API specification in the [OpenAPI 3.0](https://spec.openapis.org/oas/v3.0.0) format here:
+You can find the full API specification in the [OpenAPI 3.1](https://spec.openapis.org/oas/v3.1.0) format here:
 
 https://api.cloudpirates.io/docs/
 
