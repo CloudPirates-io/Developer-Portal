@@ -7,6 +7,9 @@ export default defineConfig({
   description:
     "The CloudPirates Developer Portal provides developers with the resources they need to integrate our products into their own applications using our API.",
   cleanUrls: true,
+  sitemap: {
+    hostname: 'https://developer.cloudpirates.io',
+  },
   themeConfig: {
     siteTitle: "Developer Portal",
     logo: {
