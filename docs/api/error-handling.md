@@ -114,11 +114,38 @@ Our event sourced architecture employs eventually consistent read models. As a r
 }
 ```
 
+## 500 Internal Server Error
+The HTTP status code 500 indicates that the server encountered an unexpected condition that prevented it from fulfilling the request.
+This is a generic error message used when the server cannot provide a more specific error message. 
+
+**Example**
+
+```json
+{
+    "status": 500,
+    "message": "Internal Server Error"
+}
+```
+
+## 502 Bad Gateway
+Our API gateway returns a 502 Bad Gateway status when it encounters an issue with our internal backend service that prevents it from fulfilling your request. 
+
+This status code is used for all unexpected errors that do not specifically fall under the [Service Unavailable](#_503-service-unavailable) (`503`) or [Gateway Timeout](#_504-gateway-timeout) (`504`) categories.
+
+**Example**
+
+```json
+{
+    "status": 502,
+    "message": "Bad Gateway"
+}
+```
+
 ## 503 Service Unavailable
-At this time, our backend service for this endpoint was temporarily unavailable.
+Our backend service for this endpoint is (temporarily) unavailable.
 
 ::: warning
-Our internal backend system utilizes asynchronous handlers to process requests. This means that even if you encounter an error, your request can still be executed asynchronously at a later point in time.
+Our internal backend system uses asynchronous handlers to process requests. Therefore, even if you encounter an error, your request can still be executed asynchronously at a later time.
 :::
 
 **Example**
@@ -131,10 +158,10 @@ Our internal backend system utilizes asynchronous handlers to process requests. 
 ```
 
 ## 504 Gateway Timeout
-Our backend service was unable to handle your request.
+Our backend service was unable to handle your request due to a timeout.
 
 ::: warning
-Our internal backend system utilizes asynchronous handlers to process requests. This means that even if you encounter an error, your request can still be executed asynchronously at a later point in time.
+Our internal backend system uses asynchronous handlers to process requests. Therefore, even if you encounter an error, your request can still be executed asynchronously at a later time.
 :::
 
 **Example**
