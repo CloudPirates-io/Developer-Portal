@@ -27,6 +27,7 @@ export default defineConfig({
         items: [
           { text: "Quick Start", link: "/api/" },
           { text: "Error Handling", link: "/api/error-handling" },
+          { text: "Pagination", link: "/api/pagination" },
         ],
       },
       {

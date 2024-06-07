@@ -1,7 +1,3 @@
----
-next: false
----
-
 # Error Handling
 
 Our API utilizes HTTP status codes extensively to communicate errors and outcomes effectively for your requests. Below is a list of the most common errors you may encounter when using our API.
