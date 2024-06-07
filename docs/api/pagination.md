@@ -12,12 +12,12 @@ Pagination helps in managing large datasets by breaking them down into smaller, 
 
 The pagination is controlled by two query parameters:
 
-- **`limit`**: The number of items to return in a single request. Default is `20`.
-- **`offset`**: The number of items to skip before starting to collect the result set. Default is `0`, meaning no items are skipped at the start.
+- **`limit`** (Default `20`): The number of items to return in a single request.
+- **`offset`** (Default `0`): The number of items to skip before starting to collect the result set. An offset of 0 meaning no items are skipped at the start.
 
 ### Example Request
 
-```
+```bash
 GET /v1/trainings?limit=20&offset=0
 ```
 
@@ -33,7 +33,7 @@ The API response includes several headers to provide information about the pagin
 
 ### Example Response Headers
 
-```
+```bash
 x-Total: 100
 x-Limit: 20
 x-Offset: 0
@@ -45,7 +45,7 @@ The `Link` header provides relative links to navigate between pages. It includes
 
 ### Example Link Header
 
-```
+```bash
 Link: </v1/trainings?limit=20&offset=0>; rel="first",
       </v1/trainings?limit=20&offset=20>; rel="prev"
       </v1/trainings?limit=20&offset=40>; rel="next",
@@ -67,14 +67,14 @@ When navigating through the pages:
 ### Example of non existing Links
 
 On the first page:
-```
+```bash
 Link: </api/trainings?limit=20&offset=0>; rel="first",
       </api/trainings?limit=20&offset=20>; rel="next",
       </api/trainings?limit=20&offset=80>; rel="last"
 ```
 
 On the last page:
-```
+```bash
 Link: </api/trainings?limit=20&offset=0>; rel="first",
       </api/trainings?limit=20&offset=60>; rel="prev",
       </api/trainings?limit=20&offset=80>; rel="last"
