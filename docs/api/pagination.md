@@ -1,3 +1,7 @@
+---
+next: false
+---
+
 # Pagination
 
 This document provides detailed information on how to use pagination in API requests for listing resources such as trainings, billing profiles, invoices, and more.
