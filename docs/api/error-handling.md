@@ -10,6 +10,7 @@ Our API utilizes HTTP status codes extensively to communicate errors and outcome
 | 401         | Unauthorized - The request requires authentication, but the client has not provided valid credentials. |
 | 403         | Forbidden - The client does not have permission to access the requested resource. |
 | 404         | The server could not find the requested resource. |
+| 429         | Too Many Requests - The client has sent too many requests in a given amount of time (rate limiting). |
 | 500         | Internal Server Error - The server encountered an unexpected condition preventing it from fulfilling the request. |
 | 502         | Bad Gateway - The server received an invalid response from an upstream server while trying to fulfill the request. |
 | 503         | Service Unavailable - The server is currently unable to handle the request due to temporary overloading or maintenance. |
